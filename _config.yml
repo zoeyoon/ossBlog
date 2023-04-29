@@ -1,0 +1,29 @@
+title: Zoey's Blog
+markdown: kramdown
+url: ""
+baseurl: ""
+
+# for atom feed
+author:
+  name: Yoon Soye
+  email: 22000476@handong.ac.kr
+  image: /assets/img/zoey.png
+  bio: A student of Handong Global University majoring AI Computer Science :)
+  github: "zoeyoon"
+
+plugins:
+  - jemoji
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "post"
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post"
+      permalink: /posts/:categories/:year/:month/:day/:title/
