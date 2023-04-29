@@ -9,13 +9,10 @@
         <div class="post">
           <a href="{{site.baseurl}}{{post.url}}"><h3>{{post.title}}</h3></a>
           <small>{{post.date|date_to_string}}</small>
-          <p>
-            {{post.content|truncate: 120}}
-          </p>
+          <p>{{post.content|truncate: 120}}</p>
         </div>
         {% endfor %}
       </section>
-      {% include footer.html %}
     </main>
   </body>
 </html>
